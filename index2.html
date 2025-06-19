@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Technix - Vehicle Assistant App</title>
+  <link rel="stylesheet" href="style2.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+</head>
+<body>
+  <!-- Custom Cursor -->
+  <div id="cursor"></div>
+  <div id="cursor-blur"></div>
+
+  <!-- Video Background -->
+  <video autoplay loop muted src="video1.mp4"></video>
+
+  <!-- Navigation -->
+  <div id="nav">
+    <h1>technix</h1>
+    <div id="menu">
+      <a href="#page1"><h4>Home</h4></a>
+      <a href="#page3"><h4>about us</h4></a>
+      <a href="#page4"><h4>features</h4></a>
+      <a href="#page5"><h4>contact</h4></a>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div id="main">
+    <!-- Page 1: Hero Section -->
+    <div id="page1">
+      <h1>technix</h1>
+      <h2>a vehicle assistant app</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore unde possimus natus harum, molestiae magni iste maiores tenetur ab asperiores.</p>
+    </div>
+
+    <!-- Page 2: Scrolling Banner -->
+    <div id="page2">
+      <div id="scroller">
+        <div id="scroller-in">
+          <h4>WELCOME</h4>
+          <h4>TO</h4>
+          <h4>TECHNIX</h4>
+          <h4>WELCOME</h4>
+          <h4>TO</h4>
+          <h4>TECHNIX</h4>
+        </div>
+      </div>
+    </div>
+
+   <!-- Page 3: About Us (with Locomotive Scroll) -->
+<div data-scroll-section id="page3" data-scroll-speed="-1">
+  <h2 data-scroll data-scroll-delay="0.1" data-scroll-speed="2">About Us</h2>
+  <p data-scroll data-scroll-delay="0.2" data-scroll-speed="1">
+    Technix is a smart vehicle assistant app that offers features like smart parking,
+    vehicle diagnostics, and automated maintenance alerts. We're here to simplify your driving experience.
+  </p>
+</div>
+
+
+    <!-- Page 4: Features -->
+    <div id="page4">
+      <h2>Features</h2>
+      <div class="features">
+        <div class="feature-card">
+          <h3>Smart Parking</h3>
+          <p>Book parking slots in real-time with availability updates.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Vehicle Diagnostics</h3>
+          <p>Monitor vehicle health and receive performance reports.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Maintenance Alerts</h3>
+          <p>Get notified for upcoming vehicle servicing automatically.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Page 5: Contact Us -->
+    <div id="page5">
+      <h2>Contact Us</h2>
+      <form id="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div id="footer">- by technix</div>
+
+  <!-- GSAP and ScrollTrigger Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Custom JS -->
+  <script src="script2.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+</body>
+</html>
